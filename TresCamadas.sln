@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TresCamadas.API", "TresCamadas.API\TresCamadas.API.csproj", "{D61E3CA8-6E90-4065-8F60-26BCCFBA9BA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- BusinessLogicLayer", "2- BusinessLogicLayer", "{BC50CF2C-79EE-4996-ABD7-07645D118874}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - DataAcessLayer", "3 - DataAcessLayer", "{5A289DB6-96E0-4602-8BA0-9D96C2954BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4- Model", "4- Model", "{157C51A4-B67A-4939-B457-BE35E3FDB29A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TresCamadas.BLL", "TresCamadas.BLL\TresCamadas.BLL.csproj", "{90E4AA6B-CC43-404A-A17F-E66A3D8E50F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TresCamadas.DAL", "TresCamadas.DAL\TresCamadas.DAL.csproj", "{DAE9EB9E-DF35-4EEC-8574-014D130495D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TresCamadas.Model", "TresCamadas.Model\TresCamadas.Model.csproj", "{8D6138D9-B57B-47C5-8656-6E8BBC7D4270}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D61E3CA8-6E90-4065-8F60-26BCCFBA9BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61E3CA8-6E90-4065-8F60-26BCCFBA9BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61E3CA8-6E90-4065-8F60-26BCCFBA9BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61E3CA8-6E90-4065-8F60-26BCCFBA9BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E4AA6B-CC43-404A-A17F-E66A3D8E50F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E4AA6B-CC43-404A-A17F-E66A3D8E50F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E4AA6B-CC43-404A-A17F-E66A3D8E50F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E4AA6B-CC43-404A-A17F-E66A3D8E50F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE9EB9E-DF35-4EEC-8574-014D130495D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE9EB9E-DF35-4EEC-8574-014D130495D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE9EB9E-DF35-4EEC-8574-014D130495D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE9EB9E-DF35-4EEC-8574-014D130495D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D6138D9-B57B-47C5-8656-6E8BBC7D4270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6138D9-B57B-47C5-8656-6E8BBC7D4270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6138D9-B57B-47C5-8656-6E8BBC7D4270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6138D9-B57B-47C5-8656-6E8BBC7D4270}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D61E3CA8-6E90-4065-8F60-26BCCFBA9BA2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{90E4AA6B-CC43-404A-A17F-E66A3D8E50F6} = {BC50CF2C-79EE-4996-ABD7-07645D118874}
+		{DAE9EB9E-DF35-4EEC-8574-014D130495D5} = {5A289DB6-96E0-4602-8BA0-9D96C2954BE3}
+		{8D6138D9-B57B-47C5-8656-6E8BBC7D4270} = {157C51A4-B67A-4939-B457-BE35E3FDB29A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DD1DF25-3FB0-4A70-8AF9-A87E4590BAC0}
+	EndGlobalSection
+EndGlobal
