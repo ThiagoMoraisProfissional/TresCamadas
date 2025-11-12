@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using TresCamadas.BLL;
 using TresCamadas.DAL.Context;
+using TresCamadas.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<ClienteRepository>();
+builder.Services.AddScoped<ClienteService>();
 
 // EF Core + SQLite
 builder.Services.AddDbContext<TresCamadasContext>(options =>

@@ -11,9 +11,9 @@ namespace TresCamadas.API.Controllers
 
         private readonly ClienteService _clienteService;
 
-        public ClienteController()
+        public ClienteController(ClienteService service)
         {
-            _clienteService = new ClienteService();
+            _clienteService = service;
         }
 
         [HttpGet]
@@ -21,6 +21,17 @@ namespace TresCamadas.API.Controllers
         {
             var listaClientes = _clienteService.ObterTodosClientes();
             return Ok(listaClientes);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetClientesById(long paramId)
+        {
+            var cliente = _clienteService.ObterClientePorId(paramId);
+
+            if (cliente != null)
+                return Ok(cliente);
+
+            return NotFound("Cliente não encontrado!");
         }
 
         [HttpPost]
