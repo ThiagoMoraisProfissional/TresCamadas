@@ -22,5 +22,11 @@ namespace TresCamadas.DAL.Repositories
             var lista = _context.Clientes.ToList();
             return lista;
         }
+
+        public ClienteModel? ObterPorId(long paramId)
+        {
+            var cliente = _context.Clientes.Where(x => x.Id == paramId).FirstOrDefault();
+            return cliente;
+        }
     }
 }

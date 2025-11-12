@@ -6,9 +6,9 @@ namespace TresCamadas.BLL
     public class ClienteService
     {
         private readonly ClienteRepository _clienteRepository;
-        public ClienteService()
+        public ClienteService(ClienteRepository repository)
         {
-            _clienteRepository = new ClienteRepository();
+            _clienteRepository = repository;
         }
 
         public bool CadastrarCliente(ClienteModel cliente)
@@ -23,6 +23,12 @@ namespace TresCamadas.BLL
             //Fazer chamada na DAL
             var listaCliente = _clienteRepository.ObterTodos();
             return listaCliente;
+        }
+
+        public ClienteModel? ObterClientePorId(long paramId)
+        {
+            var cliente = _clienteRepository.ObterPorId(paramId);
+            return cliente;
         }
 
 
